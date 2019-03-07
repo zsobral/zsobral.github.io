@@ -21,6 +21,9 @@ repos:
   - movie-list-react
   - movie-list-react-mobx
 
+social_media:
+  linkedin: mateussobral
+
 topics:
   - name: JavaScript
     web_url: https://github.com/topics/javascript
