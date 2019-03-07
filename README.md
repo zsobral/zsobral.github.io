@@ -35,11 +35,15 @@ gem install jekyll bundler
 ```
 cd personal-website
 ```
-4. Build the site and make it available on a local server
+4. Install missing gems
+```
+bundle install
+```
+5. Build the site and make it available on a local server
 ```
 bundle exec jekyll serve
 ```
-5. Now browse to [http://localhost:4000](http://localhost:4000)
+6. Now browse to [http://localhost:4000](http://localhost:4000)
 
 ### Publish
 
@@ -47,11 +51,11 @@ When you host your personal website's code on GitHub, you get the support of fre
 
 **The fastest approach** is to rename your repository `username.github.io`, where `username` is your GitHub username (or organization name). Then, the next time you push any changes to your repository's `master` branch, they'll be accessible on the web at your `username.github.io` address.
 
-**If you want to use a custom domain**, however, you'll want to add it to your repository's "Custom domain" settings on github.com. And then register and/or [configure your domain with a DNS provider](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
+**If you want to use a custom domain**, you'll want to add it to your repository's "Custom domain" settings on github.com. And then register and/or [configure your domain with a DNS provider](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
 
 ## Customization
 
-It's your website, and you control the source code. So you can custom everything, if you like. But we've provided a handful of quick customizations for you to consider as you get your website off the ground.
+It's your website, and you control the source code. So you can customize everything, if you like. But we've provided a handful of quick customizations for you to consider as you get your website off the ground.
 
 ### Quick configuration changes
 
@@ -143,13 +147,16 @@ Jekyll's convention for defining layouts is very flexible. You can [learn more a
 
 ## Styles
 
-Your website is pre-configured to use [a very flexible CSS framework called "Primer,"](https://styleguide.github.com/primer/) alongside any custom styles you write in your `/assets/styles.scss` Sass stylesheet. It's currently referenced within your `styles.scss` file, using the CSS import at-rule:
+Your website is pre-configured to use [GitHub's very flexible CSS framework called "Primer,"](https://styleguide.github.com/primer/). It's currently referenced within your `styles.scss` file, using the CSS import at-rule:
 
 ```
 @import url('https://unpkg.com/primer/build/build.css');
 ```
 
 You are, of course, welcome to remove it or replace it with another framework. Just bear in mind that the HTML that your website came pre-packaged with references multiple Primer "utility classes" to define things like column widths, margins, and background colors.
+
+You also have the option to add on to and extend Primer's styles by adding custom CSS to your `/assets/styles.scss` Sass stylesheet. By editing this file, you can customize your website's color scheme, typography, and more.
+
 
 ## License
 
