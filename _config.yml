@@ -1,5 +1,6 @@
-layout: sidebar
-style: light
+layout: stacked
+style: dark
+host: 0.0.0.0
 
 plugins:
   - jekyll-octicons
@@ -17,9 +18,10 @@ defaults:
       layout: "post"
 
 repos:
-  - movie-list-api
-  - movie-list-react
-  - movie-list-react-mobx
+  - dev-graphql
+  - dev-app
+  - pokedex-gatsby
+  - hybrid-birds
 
 topics:
   - name: JavaScript
@@ -33,26 +35,14 @@ topics:
   - name: React
     web_url: https://github.com/topics/react
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/react/react.png
-  
-  - name: Redux
-    web_url: https://github.com/topics/redux
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/redux/redux.png
-  
-  - name: Git
-    web_url: https://github.com/topics/git
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/git/git.png
-
+    
+  - name: GraphQL
+    web_url: https://github.com/topics/graphql
+    image_url: https://raw.githubusercontent.com/github/explore/5c058a388828bb5fde0bcafd4bc867b5bb3f26f3/topics/graphql/graphql.png
+    
   - name: Docker
     web_url: https://github.com/topics/docker
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/docker/docker.png
-  
-  - name: Ruby
-    web_url: https://github.com/topics/ruby
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/ruby/ruby.png
-  
-  - name: Rails
-    web_url: https://github.com/topics/rails
-    image_url: https://raw.githubusercontent.com/github/explore/fd96fceccf8c42c99cbe29cf0f8dcc4736fcb85a/topics/rails/rails.png
 
   - name: Linux
     web_url: https://github.com/topics/linux

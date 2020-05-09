@@ -9,3 +9,9 @@ RUN gem install bundler:2.0.1
 COPY Gemfile ./
 
 COPY . .
+
+RUN bundle install
+
+EXPOSE 4000
+
+CMD [ "bundle", "exec", "jekyll", "serve" ]

@@ -3,7 +3,10 @@ version: '2'
 services:
   site:
     build: .
+    command: bundle exec jekyll serve
     ports:
-      - "8080:4000"
+      - "4000:4000"
     volumes:
       - .:/app
+    environment:
+      - PAGES_REPO_NWO=zsobral/zsobral.github.io
